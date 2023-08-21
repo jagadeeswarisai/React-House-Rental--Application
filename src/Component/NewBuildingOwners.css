@@ -1,6 +1,6 @@
 .Box
 {
-    width:100;
+    width:100%;
     height:350px;
   margin:15% auto;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
@@ -22,7 +22,7 @@
 }
 #BuildingName
 {
-    width:300px;
+    width:60%;
     height:25px;
     border:1px solid gray;
     margin-left: 10px;
@@ -30,7 +30,7 @@
 }
 #Floors
 {
-    width:300px;
+    width:60%;
     height:25px;
     border:1px solid gray;
     margin-left:53px;
@@ -38,7 +38,7 @@
 }
 #Owner
 {
-    width:300px;
+    width:60%;
     height:25px;
     border:1px solid gray;
     margin-left:93px;
@@ -46,7 +46,7 @@
 }
 #Location
 {
-    width:300px;
+    width:60%;
     height:25px;
     border:1px solid gray;
     margin-left:79px;
