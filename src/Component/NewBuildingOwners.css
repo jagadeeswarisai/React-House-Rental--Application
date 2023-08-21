@@ -22,7 +22,7 @@
 }
 #BuildingName
 {
-    width:60%;
+    width:80%;
     height:25px;
     border:1px solid gray;
     margin-left: 10px;
@@ -30,7 +30,7 @@
 }
 #Floors
 {
-    width:60%;
+    width:80%;
     height:25px;
     border:1px solid gray;
     margin-left:53px;
@@ -38,7 +38,7 @@
 }
 #Owner
 {
-    width:60%;
+    width:80%;
     height:25px;
     border:1px solid gray;
     margin-left:93px;
@@ -46,7 +46,7 @@
 }
 #Location
 {
-    width:60%;
+    width:80%;
     height:25px;
     border:1px solid gray;
     margin-left:79px;
