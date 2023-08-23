@@ -6,11 +6,11 @@ function HousesForm()
         <div id="box2">HousesUnitForm</div>
         <div>
             <label>UnitNo.Name:</label>
-            <input type="text" id="UnitNoName" onChange={(e)=>setUnitNoName(e.target.value)}/>
+            <input type="text" id="UnitNo.Name"/>
         </div>
         <div>
             <label>Unittype:</label>
-            <select id="Unittype1" onChange={(e)=>setUnittype1(e.target.value)}>
+            <select id="Unittype1">
                 <option value="Please Select here">Please Select here..</option>
                 <option value="DoubleBedRoom">DoubleBedRoom</option>
                 <option value="SingleBedRoom">SingleBedRoom</option>
@@ -19,7 +19,7 @@ function HousesForm()
         </div>
         <div>
             <label>Buildings:</label>
-            <select id="Buildings" onChange={(e)=>setBuildings(e.target.value)}>
+            <select id="Buildings">
                 <option vlaue="Please select Here">Please Select here..</option>
                 <option vlaue="kkkplaza">kkkplaza</option>
                 <option value="MMMplaza">kkkplaza</option>
