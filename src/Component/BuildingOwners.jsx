@@ -61,7 +61,7 @@ function BuildingOwners()
     return (
       
         <form class="build">
-            <div class="owner">New Building Owner </div>
+            <div class="owner">New Building Owner Form </div>
             <br></br>
             <div class='name'>
                 <label id="row">Name:</label>

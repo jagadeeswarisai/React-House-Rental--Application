@@ -12,6 +12,9 @@ import NewBuildingOwnerslist from './Component/NewBuildingOwnerslist';
 import Unit from './Component/Unit';
 import UnitForm from './Component/UnitForm1';
 import UnitFormList from './Component/UnitFormList';
+import House from './Component/House';
+import HousesForm from './Component/HousesForm';
+import HousesFormlist from './Component/HousesFormlist';
 
 
 function App() {
@@ -31,6 +34,10 @@ function App() {
             <Route path="unit"element={<Unit/>}>
               <Route path="unitform" element={<UnitForm/>}/>
               <Route path="unitformlist" element={<UnitFormList/>}/>
+            </Route>
+            <Route path="house"element={<House/>}>
+              <Route path="housesform"element={<HousesForm/>}/>
+              <Route path="housesformlist" element={<HousesFormlist/>}/>
             </Route>
           
         

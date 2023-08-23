@@ -37,7 +37,7 @@ else{
       
         <form >
             <div class="Box">
-            <h1 id="h1">NewBuilding</h1>
+            <h1 id="h1">NewBuilding Form</h1>
             <br></br>
             <div class="b1">
             <label class="row2">Building Name/No:</label>

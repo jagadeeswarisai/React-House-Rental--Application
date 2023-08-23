@@ -41,7 +41,7 @@ function Dashboard()
                     </li>
                     <br></br>
                     <li>
-                        <Link class="ul"to="/"><BsHousesFill/></Link>
+                        <Link class="ul"to="/dashboard/house"><BsHousesFill/></Link>
                         <h4>Houses</h4>
                     </li>
                     <br></br>
