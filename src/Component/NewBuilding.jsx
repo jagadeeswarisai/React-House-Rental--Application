@@ -5,6 +5,7 @@ function NewBuilding()
     return(
 <nav>
       <div class="header">
+      <div class="col">
         <div class="Dash">
         <Link id="dash"to="/dashboard/newbuilding/newbuildingownerslist"> Building Details</Link>
         </div>
@@ -12,6 +13,7 @@ function NewBuilding()
         <Link id="own"to="/dashboard/newbuilding/newbuildingowners">Add New Buildings</Link>
         </div>
     <Outlet/>
+    </div>
       </div>
       
       </nav>

@@ -1,18 +1,18 @@
 import React from 'react';
 import{Link, Outlet}from "react-router-dom";
-import "./Building.css";
+import "./House.css";
 
-function Building()
+function House()
 {
     return (
         <nav>
       <div class="header">
-        <div class="col">
+      <div class="col">
         <div class="Dash">
-        <Link id="dash"to="/dashboard/building/buildinglist">Owners Detail</Link>
+        <Link id="dash"to="/dashboard/House">HousesDetail</Link>
         </div>
         <div class="own">
-        <Link id="own"to="/dashboard/building/buildingowners">+Add New Owners</Link>
+        <Link id="own"to="/dashboard/House">+Houses Form</Link>
         </div>
         <Outlet/>
         </div>
@@ -23,4 +23,4 @@ function Building()
   }
 
 
-export default Building;
+export default House;

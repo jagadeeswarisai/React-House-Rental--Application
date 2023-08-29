@@ -7,6 +7,7 @@ function Unit()
 <div> 
 <nav>
       <div class="header">
+      <div class="col">
         <div class="Dash">
         <Link id="dash"to="/dashboard/unit/unitformlist">Unit Details</Link>
         </div>
@@ -14,6 +15,7 @@ function Unit()
         <Link id="own"to="/dashboard/unit/unitform">+New Unit Type</Link>
         </div>
         <Outlet/>
+        </div>
       </div>
       
       </nav>
