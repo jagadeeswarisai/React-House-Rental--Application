@@ -13,6 +13,8 @@ import Unit from './Component/Unit';
 import UnitForm from './Component/UnitForm1';
 import UnitFormList from './Component/UnitFormList';
 import House from './Component/House';
+import HousesForm from './Component/HousesForm';
+import HousesDetail from './Component/HousesDetail';
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
               <Route path="unitformlist" element={<UnitFormList/>}/>
             </Route>
             <Route path="House" element={<House/>}>
+              <Route path="housesform"element={<HousesForm/>}/>
+              <Route path="housesdetail" element={<HousesDetail/>}/>
               
             </Route>
       </Route>
