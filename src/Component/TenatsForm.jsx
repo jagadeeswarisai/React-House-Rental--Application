@@ -3,7 +3,7 @@ import"./TenatsForm.css";
 function Tenats()
 {
     const[TenantsName ,setTenantsName]=useState("");
-    const[PhoneNumber ,setPhoneNumber]=useState("");
+    const[MobileNumber ,setMobileNumber]=useState("");
     const[IdNumber ,setIdNumber]=useState("");
     const[Houseunit ,setHouseunit]=useState("");
     const[DateOccupied,setDateOccupied]=useState("");
@@ -17,7 +17,7 @@ function Tenats()
         {
             alert("TenantsName is required");
         }
-        else if(PhoneNumber==="")
+        else if(MobileNumber==="")
         {
             alert("PhoneNumber is required");
         }
@@ -28,6 +28,37 @@ function Tenats()
         else if(Houseunit==="")
         {
             alert("houseunit is required");
+        }
+        else if(DateOccupied==="")
+        {
+            alert("DateOccupied is required");
+        }
+        else if(HouserentDeposit==="")
+        {
+            alert("HouserentDeposit is required");
+        }
+        else if(ElectricityDeposit==="")
+        {
+            alert("ElectricityDeposit is required");
+        }
+        else if(WaterDeposit==="")
+        {
+            alert("WaterDeposit is required");
+        }
+        else if(descripation==="")
+        {
+            alert("descripation is required");
+        }
+        else{
+            localStorage.setItem("TenantsName",TenantsName);
+            localStorage.setItem("MobileNumber",MobileNumber);
+            localStorage.setItem("IdNumber",IdNumber);
+            localStorage.setItem("Houseunit",Houseunit);
+            localStorage.setItem("DateOccupied",DateOccupied);
+            localStorage.setItem("HouserentDeposit",HouserentDeposit);
+            localStorage.setItem("ElectricityDeposit",ElectricityDeposit);
+            localStorage.setItem("WaterDeposit",WaterDeposit);
+            localStorage.setItem("descripation",descripation)
         }
     }
 
@@ -43,7 +74,7 @@ function Tenats()
             <br></br>
             <div>
                 <label id="row10">PhoneNumber:</label>
-                <input type="text" id="PhoneNumber" onChange={(e)=>setPhoneNumber(e.target.value)}/>
+                <input type="text" id="MobileNumber" onChange={(e)=>setMobileNumber(e.target.value)}/>
             </div>
             <br></br>
             <div>
@@ -55,8 +86,8 @@ function Tenats()
                 <label id="row10">Houseunit:</label>
                 <select id="Houseunit" onChange={(e)=>setHouseunit(e.target.value)}>
                   <option value="Please Select Here">Please Select Here...</option>
-                  <option value="KKK Plaza">KKK Plaza</option>
-                  <option value="MMM Plaza">MMM Plaza</option>
+                  <option value="Unit1">Unit1</option>
+                  <option value="Unit2">Unit2</option>
                 </select>
             </div>
             <br></br>
