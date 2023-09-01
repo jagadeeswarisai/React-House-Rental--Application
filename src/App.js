@@ -15,6 +15,9 @@ import UnitFormList from './Component/UnitFormList';
 import House from './Component/House';
 import HousesForm from './Component/HousesForm';
 import HousesDetail from './Component/HousesDetail';
+import Tenat from './Component/Tenat';
+import Tenats from './Component/TenatsForm';
+import TenantsDetail from './Component/TenantsDetail';
 
 function App() {
   return (
@@ -37,7 +40,10 @@ function App() {
             <Route path="House" element={<House/>}>
               <Route path="housesform"element={<HousesForm/>}/>
               <Route path="housesdetail" element={<HousesDetail/>}/>
-              
+            </Route>
+            <Route path="tenat"element={<Tenat/>}>
+              <Route path="tenats" element={<Tenats/>}/>
+              <Route path="tenantsdetail"element={<TenantsDetail/>}/>
             </Route>
       </Route>
       </Routes>

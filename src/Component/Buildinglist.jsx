@@ -20,9 +20,9 @@ const Buildinglist=()=>{
         </p>
         <br></br>
         <p>
-            PhoneNo:{""}
-            {localStorage.getItem("PhoneNo")
-            ?localStorage.getItem("PhoneNo"):"NA"}
+        Percentage:{""}
+            {localStorage.getItem("Percentage")
+            ?localStorage.getItem("Percentage"):"NA"}
         </p>
         <br></br>
         <p>

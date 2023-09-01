@@ -1,18 +1,18 @@
 import React from 'react';
 import{Link, Outlet}from "react-router-dom";
-import "./Building.css";
+import "./Tenat.css";
 
-function Building()
+function Tenat()
 {
     return (
         <nav>
       <div class="header">
         <div class="col">
         <div class="Dash">
-        <Link id="dash"to="/dashboard/building/buildinglist">Owners Detail</Link>
+        <Link id="dash"to="/dashboard/Tenat/tenantsdetail">Tenants Detail</Link>
         </div>
         <div class="own">
-        <Link id="own"to="/dashboard/building/buildingowners">+Building Owner</Link>
+        <Link id="own"to="/dashboard/Tenat/tenats">+Add New Tenants</Link>
         </div>
         <Outlet/>
         </div>
@@ -23,4 +23,4 @@ function Building()
   }
 
 
-export default Building;
+export default Tenat;

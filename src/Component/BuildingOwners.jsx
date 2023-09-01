@@ -8,7 +8,7 @@ function BuildingOwners()
     const[PhoneNo ,setPhoneNo]=useState("");
     const[Email  ,setEmail]=useState("");
     const[AdharNo ,setAdharNo]=useState("");
-    const[PanNo ,setPanNo]=useState("");
+    const[Percentage ,setPercentage]=useState("");
     const[Aggrement ,setAggrement]=useState("");
     const[Status ,setStatus]=useState("");
     const handleSubmit=()=>
@@ -33,9 +33,9 @@ function BuildingOwners()
         {
             alert("AdharNo is required");
         }
-        else if(PanNo==="")
+        else if(Percentage==="")
         {
-            alert("PanNo is required");
+            alert("Percentage is required");
         }
         else if(Aggrement==="")
         {
@@ -51,7 +51,7 @@ function BuildingOwners()
             localStorage.setItem("PhoneNo",PhoneNo);
             localStorage.setItem("Email",Email);
             localStorage.setItem("AdharNo",AdharNo);
-            localStorage.setItem("PanNo",PanNo);
+            localStorage.setItem("Percentage",Percentage);
             localStorage.setItem("Aggrement",Aggrement);
             localStorage.setItem("Status",Status);
             alert("userSaved");
@@ -61,7 +61,7 @@ function BuildingOwners()
     return (
       
         <form class="build">
-            <div class="owner">New Building Owner Form </div>
+            <div class="owner">Building Owner Detail</div>
             <br></br>
             <div class='name'>
                 <label id="row">Name:</label>
@@ -88,9 +88,9 @@ function BuildingOwners()
                 <input type="text" id="AdharNo" onChange={(e)=>setAdharNo(e.target.value)}/>
                 </div>
                 <br></br>
-                <div class='PanNo:'>
-                <label id="row">PanNo:</label>
-                <input type="text" id="PanNo" onChange={(e)=>setPanNo(e.target.value)}/>
+                <div class='Percentage:'>
+                <label id="row">Percentage:</label>
+                <input type="text" id="Percentage" onChange={(e)=>setPercentage(e.target.value)}/>
                 </div>
                 <br></br>
                 <div class='Aggrement:'>
