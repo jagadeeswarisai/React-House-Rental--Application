@@ -51,7 +51,7 @@ function Dashboard()
                     </li>
                     <br></br>
                     <li>
-                        <Link class="ul"to="/"><FaFileInvoice/></Link>
+                        <Link class="ul"to="/dashboard/billing"><FaFileInvoice/></Link>
                         <h4>Billing & Invoice</h4>
                     </li>
                     <br></br>

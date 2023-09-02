@@ -18,6 +18,12 @@ import HousesDetail from './Component/HousesDetail';
 import Tenat from './Component/Tenat';
 import Tenats from './Component/TenatsForm';
 import TenantsDetail from './Component/TenantsDetail';
+import Billing from './Component/Billing';
+import NewInvoice from './Component/NewInvoice';
+import NewInvoiceDetail from './Component/NewInvoiceDetail';
+
+
+
 
 function App() {
   return (
@@ -44,6 +50,10 @@ function App() {
             <Route path="tenat"element={<Tenat/>}>
               <Route path="tenats" element={<Tenats/>}/>
               <Route path="tenantsdetail"element={<TenantsDetail/>}/>
+            </Route>
+            <Route path="billing"element={<Billing/>}>
+     <Route path="newinvoice"element={<NewInvoice/>}/>
+     <Route path="newinvoicedetail"element={<NewInvoiceDetail/>}/>  
             </Route>
       </Route>
       </Routes>
