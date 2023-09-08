@@ -34,6 +34,11 @@ if(UserName1 === "Admin"  && Password1 === "admin" && ConfirmPassword1 ==="admin
             <label  id="col11">ConformPassword:</label>
             <input type="text" id="ConfirmPassword1" onChange={(e)=>setConfirmPassword1(e.target.value)}/>
         </div>
+        <br></br>
+        <div>
+                <p>Already Have An Account? <span><Link to="/">SignIn</Link></span></p>
+                
+            </div>
         <br>
         </br>
         <br></br>
