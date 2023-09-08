@@ -21,6 +21,10 @@ import TenantsDetail from './Component/TenantsDetail';
 import Billing from './Component/Billing';
 import NewInvoice from './Component/NewInvoice';
 import NewInvoiceDetail from './Component/NewInvoiceDetail';
+import TranscationPay from './Component/TranscationPay';
+import PaymentForm from './Component/PaymentForm';
+import PaymentDetail from './Component/PaymentDetail';
+
 
 
 
@@ -55,7 +59,11 @@ function App() {
      <Route path="newinvoice"element={<NewInvoice/>}/>
      <Route path="newinvoicedetail"element={<NewInvoiceDetail/>}/>  
             </Route>
-      </Route>
+          <Route path="transcationpay"element={<TranscationPay/>}>
+            <Route path="paymentform" element={<PaymentForm/>}/>
+            <Route path="paymentdetail"element={<PaymentDetail/>}/>
+          </Route>
+    </Route>
       </Routes>
 
       

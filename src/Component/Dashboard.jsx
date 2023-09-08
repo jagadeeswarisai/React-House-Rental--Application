@@ -56,7 +56,7 @@ function Dashboard()
                     </li>
                     <br></br>
                     <li>
-                        <Link class="ul"to="/"><MdPayment/></Link>
+                        <Link class="ul"to="/dashboard/transcationpay"><MdPayment/></Link>
                         <h4>Payment</h4>
                     </li>
                     
