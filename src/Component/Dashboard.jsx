@@ -2,13 +2,13 @@ import React from "react";
 import "./Dashboard.css";
 import{SiHomeadvisor} from"react-icons/si";
 import{BsBuildings} from"react-icons/bs";
-import{AiOutlineDashboard}from"react-icons/ai";
 import{FaRegBuilding}from "react-icons/fa";
 import{TbBuildingCommunity}from "react-icons/tb";
 import{BsHousesFill}from "react-icons/bs";
 import{BsPeopleFill}from"react-icons/bs";
 import{FaFileInvoice}from"react-icons/fa";
 import{MdPayment}from"react-icons/md";
+import{AiOutlineDashboard}from"react-icons/ai";
 import {  Link, Outlet } from 'react-router-dom';
 function Dashboard()
 {
@@ -20,8 +20,8 @@ function Dashboard()
                     <nav>
                         <ul>
                             <li>
-                                <Link class="ul" to="/"><AiOutlineDashboard/></Link>
-                                <h4>DashBoard</h4>
+                                <Link class="ul" to="/dashboard"><AiOutlineDashboard/></Link>
+                                <h4>Home</h4>
                             </li>
                             <br></br>
                             <li>

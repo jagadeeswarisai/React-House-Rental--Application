@@ -39,7 +39,7 @@ const LoginPage=()=>
                 </div>
                 <br></br>
                 <div>
-                    <p>Dont Have An Account? <span><Link to="/">SignUp</Link></span></p>
+                    <p>Dont Have An Account? <span><Link to="/signup">SignUp</Link></span></p>
                     
                 </div>
                 <br></br>

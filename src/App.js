@@ -24,6 +24,7 @@ import NewInvoiceDetail from './Component/NewInvoiceDetail';
 import TranscationPay from './Component/TranscationPay';
 import PaymentForm from './Component/PaymentForm';
 import PaymentDetail from './Component/PaymentDetail';
+import SignUp from './Component/SignUp';
 
 
 
@@ -34,6 +35,7 @@ function App() {
     <div >
       <Routes>
         <Route path="/" element={<LoginPage/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
         <Route path="/dashboard" element={<Dashboard/>}>
           <Route path="building" element={<Building/>}>
           <Route path="buildingowners" element={<BuildingOwners/>}/>
