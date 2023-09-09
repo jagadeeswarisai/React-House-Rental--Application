@@ -25,6 +25,7 @@ import TranscationPay from './Component/TranscationPay';
 import PaymentForm from './Component/PaymentForm';
 import PaymentDetail from './Component/PaymentDetail';
 import SignUp from './Component/SignUp';
+import Home from './Component/Home';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<LoginPage/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/dashboard" element={<Dashboard/>}>
+          <Route path="home" element={<Home/>}/>
           <Route path="building" element={<Building/>}>
           <Route path="buildingowners" element={<BuildingOwners/>}/>
          <Route path="buildinglist"element={<Buildinglist/>}/>

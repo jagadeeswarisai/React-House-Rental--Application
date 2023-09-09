@@ -8,8 +8,9 @@ import{BsHousesFill}from "react-icons/bs";
 import{BsPeopleFill}from"react-icons/bs";
 import{FaFileInvoice}from"react-icons/fa";
 import{MdPayment}from"react-icons/md";
-import{AiOutlineDashboard}from"react-icons/ai";
+import{BiSolidHomeSmile}from"react-icons/bi";
 import {  Link, Outlet } from 'react-router-dom';
+
 function Dashboard()
 {
     return(
@@ -20,7 +21,7 @@ function Dashboard()
                     <nav>
                         <ul>
                             <li>
-                                <Link class="ul" to="/dashboard"><AiOutlineDashboard/></Link>
+                                <Link class="ul" to="/dashboard/home"><BiSolidHomeSmile/></Link>
                                 <h4>Home</h4>
                             </li>
                             <br></br>
@@ -63,6 +64,7 @@ function Dashboard()
                     </ul>
                     </nav>
             </div>
+           
             <Outlet/>
             
             </div>
