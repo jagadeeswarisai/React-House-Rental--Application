@@ -8,8 +8,8 @@ const LoginPage=()=>
     const navigate=useNavigate();
     const[UserName,setUserName]=useState('');
     const[Password,setPassword]=useState('');
-    const userName=localStorage.getItem("UserName")?localStorage.getItem("UserName"):"jagadeeswarisai"
-    const password=localStorage.getItem("Password")?localStorage.getItem("Password"):"Ruthresh"
+    const userName=localStorage.getItem("UserName")?localStorage.getItem("UserName"):"Admin"
+    const password=localStorage.getItem("Password")?localStorage.getItem("Password"):"admin"
     const handleSubmit=(e)=>
     {
         e.preventDefault();
