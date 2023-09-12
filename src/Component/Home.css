@@ -21,11 +21,24 @@
 .col15
 {
     width:500px;
-    height:250px;
+    height:200px;
     border:1px solid  #3b5998;
     float:left;
     margin-left: 30px;
     margin-top: 20px;
     background-color: #3b5998;
     border-radius:5px;
+}
+.col15
+{
+    color:white;
+    font-size:100px;
+ padding-top: 50px;
+    text-align: center;
+}
+#col16
+{
+    font-size: 20px;
+    color:white;
+   
 }
