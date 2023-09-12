@@ -43,29 +43,29 @@ function App() {
           <Route path="buildingowners" element={<BuildingOwners/>}/>
          <Route path="buildinglist"element={<Buildinglist/>}/>
             </Route>
-            <Route path="NewBuilding" element={<NewBuilding/>}>
-              <Route path="newbuildingowners" element={<NewBuildingOwners/>}/>
-              <Route  path="newbuildingownerslist" element={<NewBuildingOwnerslist/>}/>
+            <Route exact path="NewBuilding" element={<NewBuilding/>}>
+              <Route exact path="newbuildingowners" element={<NewBuildingOwners/>}/>
+              <Route  exact path="newbuildingownerslist" element={<NewBuildingOwnerslist/>}/>
             </Route>
-            <Route path="unit"element={<Unit/>}>
-              <Route path="unitform" element={<UnitForm/>}/>
-              <Route path="unitformlist" element={<UnitFormList/>}/>
+            <Route  exact path="unit"element={<Unit/>}>
+              <Route exact path="unitform" element={<UnitForm/>}/>
+              <Route exact path="unitformlist" element={<UnitFormList/>}/>
             </Route>
-            <Route path="House" element={<House/>}>
-              <Route path="housesform"element={<HousesForm/>}/>
-              <Route path="housesdetail" element={<HousesDetail/>}/>
+            <Route exact path="House" element={<House/>}>
+              <Route exact path="housesform"element={<HousesForm/>}/>
+              <Route exact path="housesdetail" element={<HousesDetail/>}/>
             </Route>
-            <Route path="tenat"element={<Tenat/>}>
-              <Route path="tenats" element={<Tenats/>}/>
-              <Route path="tenantsdetail"element={<TenantsDetail/>}/>
+            <Route exact path="tenat"element={<Tenat/>}>
+              <Route exact path="tenats" element={<Tenats/>}/>
+              <Route exact path="tenantsdetail"element={<TenantsDetail/>}/>
             </Route>
-            <Route path="billing"element={<Billing/>}>
-     <Route path="newinvoice"element={<NewInvoice/>}/>
-     <Route path="newinvoicedetail"element={<NewInvoiceDetail/>}/>  
+            <Route exact path="billing"element={<Billing/>}>
+     <Route exact path="newinvoice"element={<NewInvoice/>}/>
+     <Route exact path="newinvoicedetail"element={<NewInvoiceDetail/>}/>  
             </Route>
-          <Route path="transcationpay"element={<TranscationPay/>}>
-            <Route path="paymentform" element={<PaymentForm/>}/>
-            <Route path="paymentdetail"element={<PaymentDetail/>}/>
+          <Route exact path="transcationpay"element={<TranscationPay/>}>
+            <Route exact path="paymentform" element={<PaymentForm/>}/>
+            <Route exact path="paymentdetail"element={<PaymentDetail/>}/>
           </Route>
     </Route>
       </Routes>
