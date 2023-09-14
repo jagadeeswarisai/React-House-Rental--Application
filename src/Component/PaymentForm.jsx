@@ -34,7 +34,7 @@ import "./PaymentForm.css";
       localStorage.setItem("DueInvoice",DueInvoice);
       localStorage.setItem("AmmountPaid",AmmountPaid);
       localStorage.setItem("PaymentMode",PaymentMode);
-      localStorage.setItem("descripation",descripation2);
+      localStorage.setItem("descripation2",descripation2);
     }
    }
   return(

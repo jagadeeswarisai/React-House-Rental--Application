@@ -37,7 +37,7 @@ import"./PaymentDetail.css";
             <br></br>
           
             <p>
-            descripation:{""}
+            descripations:{""}
             {localStorage.getItem("descripation2")?
             localStorage.getItem("descripation2")
         :"NA"}
