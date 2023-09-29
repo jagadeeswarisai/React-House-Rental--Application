@@ -31,6 +31,8 @@ import Home from './Component/Home';
 
 
 
+
+
 function App() {
   return (
     <div >
@@ -68,8 +70,9 @@ function App() {
             <Route exact path="paymentdetail"element={<PaymentDetail/>}/>
           </Route>
     </Route>
+  
       </Routes>
-
+   
       
     </div>
   );

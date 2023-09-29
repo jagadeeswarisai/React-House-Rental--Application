@@ -1,73 +1,58 @@
-import React, { useState } from "react";
+
 import"./NewBuildingOwners.css";
 function NewBuildingOwners()
 {
-    const[BuildingName ,setBuildingName] =useState("");
-    const[Floors, setFloors] =useState("");
-    const[Owner ,setOwners]=useState("");
-    const[Location ,setLocation]=useState("");
-    const handleSubmit=()=>
-    {
-       if(BuildingName==="")
-       {
-        alert("Building Name is Required");
-       }
-       else if(Floors==="")
-       {
-        alert("Floor is required");
-       }
-       else if(Owner==="")
-       {
-        alert("Owner Is required");
-       }
-       else if(Location==="")
-       {
-        alert("Location is required")
-       }
-else{
-    localStorage.setItem("BuildingName",BuildingName);
-    localStorage.setItem("Floors",Floors);
-    localStorage.setItem("Owner",Owner);
-    localStorage.setItem("Location",Location)
-}
     
-    }
     return(
        
-      
-        <form >
-            <div class="Box">
-            <h1 id="h1">NewBuilding Form</h1>
-            <br></br>
-            <div class="b1">
-            <label class="row2">Building Name/No:</label>
-            <input type="text" id="BuildingName"onChange={(e)=>setBuildingName(e.target.value)}/>
+      <div>
+        <img src={require("./images/building.jpg")} width="487.625px" height="365.75px" alt="cam" id="img1"/>
+        <div  id="p2" >
+        <from>
+            <div>
+                <label id="p3">BuildingName:</label>
+                <input type="text" id="BuildingName"></input>
             </div>
             <br></br>
-            <div class="b2">
-            <label class="row2">No.of Floors:</label>
-            <input type="text" id="Floors" onChange={(e)=>setFloors(e.target.value)}/>
-            </div>
-            <br></br>
-            <div class="b3">
-            <label class="row2">Owner:</label>
-            <select id="Owner" onChange={(e)=>setOwners(e.target.value)}>
-            <option value="Please Select Here">Please Select Here..</option>
-                <option value="Arun">Arun 56</option>
-                <option value="Jaga">jaga 43</option>
+            <div>
+                <label id="p3">Floor:</label>
+                <select id="Floor">
+                <option value="Please Select Here">Please Select Here..</option>
+                <option value="1st Floor">1st Floor</option>
+                <option value="2nd Floor">2nd Floor</option>
+                <option value="3rdFloor">3rdf Floor</option>
+                <option value="4th Floor">4th Floor</option>
+                  <option value="5th Floor">5th Floor</option>
                 </select>
             </div>
             <br></br>
-            <div class="b4">
-            <label class="row2">Location:</label>
-            <input type="text" id="Location" onChange={(e)=>setLocation(e.target.value)}/>
+            <div>
+                <label id="p3">Owner:</label>
+                <select id="Owner">
+                <option value="Please Select Here">Please Select Here..</option>
+                <option value="Arun">"Arun</option>
+                <option value="Ruthresh">Ruthresh</option>
+                <option vaue="Sridhar">Sridhar</option>
+                </select>
             </div>
             <br></br>
-            <br></br>
-            <button type="submit"  onClick={()=>handleSubmit()} id="Submit1">Submit</button>
+            <div>
+                <label id="p3">Location:</label>
+                <select id="Location">
+                <option value="Please Select Here">Please Select Here..</option>
+                <option value="RedHills">RedHills</option>
+                <option Value="Aavadi">Aavadi</option>
+                <option value="Guduvancheery">Guduvancheery</option>
+                </select>
             </div>
-        </form>
-    
+            <br>
+            </br>
+            <br></br>
+            <button type="submit" id="b">Submit</button>
+            
+        </from>
+        </div>
+        </div>
     );
 }
 export default NewBuildingOwners;

@@ -1,98 +1,104 @@
-.build
+
+
+#para1
+{
+    font-size:200px ;
+    margin-top: 100px;
+}
+#para2
+{
+    font-size: 20px;
+    margin-left: -750px;
+    margin-top: -70px;
+}
+#para4
+{
+    width:640px;
+    height:470px;
+    margin-left: 300px;
+   margin-top: -260px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+.para3
 {
     width:100%;
-    height:540px;
-   margin-top: 80px;
-   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
-}
-.owner
-{
-    width: 100%;
-    height:40px;
+    height:35px;
+    border:1px solid #3b5998;
     text-align: center;
-    padding-top: 10px;
-    background-color: #3b5998;
-    color:white;
-    font-size: 20px;
-    
+   padding-top: 10px;
+   background-color: #3b5998;
+   color:white;
+   
 }
 #Name
 {
-    width:80%;
+    width:95%;
     height:25px;
     border:1px solid gray;
-    margin-left: 90px;
+    margin-left: 15px;
     border-radius: 3px;
-   
 }
-#Address
+#para5
 {
-    width:80%;
-    height:25px;
-    border:1px solid gray;
-    margin-left: 75px;
-    border-radius: 3px;
+    margin-left: 15px;
 }
 #PhoneNo
 {
-    width:80%;
+    width:95%;
     height:25px;
     border:1px solid gray;
-    margin-left:65px;
+    margin-left: 15px;
     border-radius: 3px;
 }
-#Email
+#IdNo
 {
-    width:80%;
+    width:95%;
     height:25px;
     border:1px solid gray;
-    margin-left: 96px;
+    margin-left: 15px;
     border-radius: 3px;
 }
-#AdharNo
+#E-Mail
 {
-    width:80%;
+    width:95%;
     height:25px;
     border:1px solid gray;
-    margin-left: 70px;
+    margin-left: 15px;
     border-radius: 3px;
 }
-#Percentage
+#AggrementDate
 {
-    width:80%;
+    width:95%;
     height:25px;
     border:1px solid gray;
-    margin-left: 50px;
-    border-radius: 3px;
-}
-#Aggrement
-{
-    width:80%;
-    height:25px;
-    border:1px solid gray;
-    margin-left: 20px;
+    margin-left: 15px;
     border-radius: 3px;
 }
 #Status
 {
-    width:80%;
+    width:95%;
     height:25px;
     border:1px solid gray;
-    margin-left: 90px;
+    margin-left: 15px;
     border-radius: 3px;
 }
-#Submit
+#bt
 {
-    width:20%;
+    width:40%;
+    border:1px solid#3b5998;
+   
     height:35px;
-    border:1px solid gray;
+    margin-left: 190px;
     border-radius: 5px;
-    margin:2px 40%;
     background-color: #3b5998;
     color:white;
-    
 }
-#row
+#img2
 {
-    margin-left: 20px;
+    margin-top: 100px;
+}
+#p1
+{
+    margin-left: -750px;
+    font-size: large;
 }
