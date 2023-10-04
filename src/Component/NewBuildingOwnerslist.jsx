@@ -7,21 +7,21 @@ const NewBuildingOwnerslist =()=>
          <h1 id="row1">New BuildingDetail List</h1>
          <br></br>
          <p>
-            BuildingName:{""}
+         BuildingName:{""}
              {localStorage.getItem("BuildingName")
         ?localStorage.getItem("BuildingName")
     :"NA"}
     </p>
    <br></br>
     <p>
-            Floors:{""}
-             {localStorage.getItem("Floors")
-        ?localStorage.getItem("Floors")
+    Floor:{""}
+             {localStorage.getItem("Floor")
+        ?localStorage.getItem("Floor")
     :"NA"}
     </p>
    <br></br>
     <p>
-            Owner:{""}
+    Owner:{""}
              {localStorage.getItem("Owner")
         ?localStorage.getItem("Owner")
     :"NA"}
