@@ -1,62 +1,31 @@
 import React from "react";
-import"./BuildingOwners.css";
 
-function BuildingOwners()
-{
-    
-    return (
-
-   
+function  BuildingOwners(){
+    return(
       <div>
-   
-    
-   <img src={require("./images/buildingowner.png")} width="200" height="200" alt="cam" id="img2"/>
-   <p id="p1">BuildingOwner</p>
-    <div id="para4">
-        <div class="para3">BuildingOwnerInfromation</div>
-        <br></br>
-    <from >
-        <div>
-            <label id="para5">Name:</label>
-            <input type="text" id="Name"></input>
-        </div>
-        
-        <div>
-            <label id="para5">PhoneNo:</label>
-            <input type="text" id="PhoneNo"></input>
-        </div>
-        
-        <div>
-            <label id="para5">IdNo:</label>
-            <input type="text" id="IdNo"></input>
-        </div>
-        
-        <div>
-            <label id="para5">E-Mail</label>
-            <input type="text" id="E-Mail"></input>
-        </div>
-       
-        <div>
-            <label id="para5">AggrementDate:</label>
-            <input type="text" id="AggrementDate"></input>
-        </div>
+        <h1> Building Owners Information</h1>
+        <Owner img={require("./images/Owner.jpg")} width="50" height="50" 
+         Name="Arun" PhoneNo="9159538453" IdNo="14578925" mail="arunmech@gmail.com" Aggrementdate="14.12.2023" Status="Active"/>
+          <Owner img={require("./images/Owner.jpg")} width="50" height="50" 
+         Name="Arun" PhoneNo="9159538453" IdNo="14578925" mail="arunmech@gmail.com" Aggrementdate="14.12.2023" Status="Active"/>
+        <Owner/>
       
-        <div>
-            <label id="para5">Status:</label>
-            <select id="Status">
-                <option value="Please Select Here">Please Select Here..</option>
-                <option vlaue="Active">Active</option>
-                <option value="InActive">InActive</option>
-            </select>
-        </div>
-        <br></br>
-        <br></br>
-        <button type="submit" id="bt">Submit</button>
-    </from>
-    </div>
         </div>
       
     );
-    }
-
+}
+ const Owner=(props)=>
+ {
+    return(
+ <div id="r1">
+  <img src={props.img} />
+  <h1>{props.Name}</h1>
+  <h1>{props.PhoneNo}</h1>
+  <h1>{ props.IdNo}</h1>
+  <h1>{props.mail}</h1>
+  <h1>{props.Aggrementdate}</h1>
+  <h1>{props.Status}</h1>
+ </div>
+   );
+ }
 export default BuildingOwners;

@@ -102,3 +102,9 @@
     margin-left: -750px;
     font-size: large;
 }
+#r1
+{
+    width:300px;
+    height:400px;
+    border:1px solid gray;
+}
