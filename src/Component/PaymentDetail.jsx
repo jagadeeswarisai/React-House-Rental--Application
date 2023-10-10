@@ -6,14 +6,14 @@ import"./PaymentDetail.css";
         <div class='row21'>
             <div class="row23">PaymentDetail</div>
             <br></br>
-            <p>
+            <p id="two">
             TenantDetail:{""}
             {localStorage.getItem("TenantDetail")?
             localStorage.getItem("TenantDetail")
         :"NA"}
             </p>
           <br></br>
-            <p>
+            <p id="two">
             DueInvoice:{""}
             {localStorage.getItem("DueInvoice")?
             localStorage.getItem("DueInvoice")
@@ -27,7 +27,7 @@ import"./PaymentDetail.css";
         :"NA"}
         </p>
        <br></br>
-            <p>
+            <p id="two">
             PaymentMode:{""}
             {localStorage.getItem("PaymentMode")?
             localStorage.getItem("PaymentMode")
@@ -36,7 +36,7 @@ import"./PaymentDetail.css";
             </p>
             <br></br>
           
-            <p>
+            <p id="two">
             descripations:{""}
             {localStorage.getItem("descripation2")?
             localStorage.getItem("descripation2")

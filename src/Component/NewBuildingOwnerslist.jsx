@@ -6,21 +6,21 @@ const NewBuildingOwnerslist =()=>
         <div class="buildingname">
          <h1 id="row1">New BuildingDetail List</h1>
          <br></br>
-         <p>
+         <p id="two">
          BuildingName:{""}
              {localStorage.getItem("BuildingName")
         ?localStorage.getItem("BuildingName")
     :"NA"}
     </p>
    <br></br>
-    <p>
+    <p id="two"> 
     Floor:{""}
              {localStorage.getItem("Floor")
         ?localStorage.getItem("Floor")
     :"NA"}
     </p>
    <br></br>
-    <p>
+    <p id="two">
     Owner:{""}
              {localStorage.getItem("Owner")
         ?localStorage.getItem("Owner")
@@ -28,7 +28,7 @@ const NewBuildingOwnerslist =()=>
      
     </p>
     <br></br>
-    <p>
+    <p id="two">
             Location:{""}
              {localStorage.getItem("Location")
         ?localStorage.getItem("Location")

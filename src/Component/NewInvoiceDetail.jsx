@@ -7,7 +7,7 @@ function NewInvoiceDetail()
         <div class="row16">
         <div class="row17">Invoice Detail</div>
         <br></br>
-        <p>
+        <p id="two">
           FlatName:{""}
           {localStorage.getItem("FlatName")?
           localStorage.getItem("FlatName")
@@ -15,28 +15,28 @@ function NewInvoiceDetail()
         </p>
         <br>
         </br>
-        <p>
+        <p id="two">
         Tanatname:{""}
         {localStorage.getItem("Tanatname")?
         localStorage.getItem("Tanatname")
     :"NA"}
         </p>
         <br></br>
-        <p>
+        <p id="two">
         Date1:{""}
         {localStorage.getItem("Date1")?
         localStorage.getItem("Date1")
     :"NA"}
         </p>
         <br></br>
-        <p>
+        <p id="two">
         Ammount:{""}
         {localStorage.getItem("Ammount")?
         localStorage.getItem("Ammount")
     :"NA"}
         </p>
         <br></br>
-        <p>
+        <p id="two">
         ModeOfPayment:{""}
         {localStorage.getItem("ModeOfPayment")?
         localStorage.getItem("ModeOfPayment")
