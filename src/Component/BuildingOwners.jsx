@@ -1,56 +1,33 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import Buildinglist from "./Buildinglist";
 
-function  BuildingOwners(){
-    return(
-      <div>
-        
-        <Owner img={require("./images/Owner.jpg")} width="50" height="50" 
-         Name="Arun" PhoneNo="9159538453" IdNo="14578925" mail="arunmech@gmail.com" Aggrementdate="14.12.2023" Status="Active"/>
-          
-        
-      
-        </div>
-      
-    );
-}
- const Owner=(props)=>
- {
-  const ownerStyle = {
-    width: '30%', // Make the container width 100% for centering
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center', // Center items horizontally
-    textAlign: 'center', // Center text horizontally
-    padding: '10px',
-    margin: '90px',
-   
-  };
-  const imageStyle = {
-    width: '150px',
-    height: '150px',
-    border: '1px solid gray',
-    borderRadius: '50%', // Optional: If you want a circular image
-    display: 'block', // To center the image within its container
-    margin: 'auto', // To center the image horizontally
-  
-    
-  };
-    return(
- <div>
-  <div style={ownerStyle} className="r1">
-  <Link to="/Buildinglist">
-        <img src={props.img} alt="Owner" id="im" style={imageStyle} />
-        <h1>{props.Name}</h1>
-      </Link>
-  <p>{props.PhoneNo}</p>
-  <p>{ props.IdNo}</p>
-  <p>{props.mail}</p>
-  <p>{props.Aggrementdate}</p>
-  <p>{props.Status}</p>
-  </div>
-  </div>
+
+const Owners=[
+
  
-   );
- }
+    {  img: require("./images/Owner.jpg"),id:"Id:1", Name:"Name:Arunesh", PhoneNo:"PhoneNo:1234545", Mail:"Mail:arun@gmail.com" },
+    {img: require("./images/owner1.png"),id:"Id:2", Name:"Name:Ruthresh",  PhoneNo:"PhoneNo:123459", Mail:"Mail:ruthu@gmail.com"},
+    {   img: require("./images/Owner2.jpg"),id:"Id:3", Name:"Name:Teju",  PhoneNo:"PhoneNo:123456", Mail:"Mail:teju@gmail.com" },
+    {  img: require("./images/owner3.png"),id:"Id:4", Name:"Name:Ravi",  PhoneNo:"PhoneNo:123452", Mail:"Mail:ravi@gmail.com"},
+    {   img: require("./images/owner4.png"),id:"Id:5", Name:"Name:Anitha",  PhoneNo:"PhoneNo:123454", Mail:"Mail:ani@gmail.com"},
+];
+
+
+function BuildingOwners()
+    {
+        return(
+<div>
+    <div className="Container">
+        <div className="display-1"></div>
+            <h1>Building Owner Information</h1>
+            {Owners.map((Owner)=> <Buildinglist Key ={Owner.id} img={Owner.img}  id={Owner.id} Name={Owner.Name} PhoneNo={Owner.PhoneNo}
+             Mail={Owner.Mail}/>
+            
+             )};
+            </div>
+         <Buildinglist/>
+            </div>
+
+        );
+    }
 export default BuildingOwners;
