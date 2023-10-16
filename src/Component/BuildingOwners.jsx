@@ -1,15 +1,18 @@
 import React from "react";
 import Buildinglist from "./Buildinglist";
+import { Link } from "react-router-dom";
+import"./BuildingOwners.css";
 
 
 const Owners=[
 
  
-    {  img: require("./images/Owner.jpg"),id:"Id:1", Name:"Name:Arunesh", PhoneNo:"PhoneNo:1234545", Mail:"Mail:arun@gmail.com" },
-    {img: require("./images/owner1.png"),id:"Id:2", Name:"Name:Ruthresh",  PhoneNo:"PhoneNo:123459", Mail:"Mail:ruthu@gmail.com"},
-    {   img: require("./images/Owner2.jpg"),id:"Id:3", Name:"Name:Teju",  PhoneNo:"PhoneNo:123456", Mail:"Mail:teju@gmail.com" },
-    {  img: require("./images/owner3.png"),id:"Id:4", Name:"Name:Ravi",  PhoneNo:"PhoneNo:123452", Mail:"Mail:ravi@gmail.com"},
-    {   img: require("./images/owner4.png"),id:"Id:5", Name:"Name:Anitha",  PhoneNo:"PhoneNo:123454", Mail:"Mail:ani@gmail.com"},
+    {  img: require("./images/Owner.jpg"), Name:"Name:Arunesh", PhoneNo:"PhoneNo:1234545", Mail:"Mail:arun@gmail.com",Status:"Status:Active" },
+    {img: require("./images/owner1.png"),Name:"Name:Ruthresh",  PhoneNo:"PhoneNo:123459", Mail:"Mail:ruthu@gmail.com" ,Status:"Status:Active"},
+    {  img: require("./images/owner3.png"), Name:"Name:Ravi",  PhoneNo:"PhoneNo:123452", Mail:"Mail:ravi@gmail.com" ,Status:"Status:Active"},
+    {   img: require("./images/owner4.png"), Name:"Name:Anitha",  PhoneNo:"PhoneNo:123454", Mail:"Mail:ani@gmail.com" ,Status:"Status:InActive"},
+    {  img: require("./images/owner5.jpg"), Name:"Name:Ariesh", PhoneNo:"PhoneNo:1234545", Mail:"Mail:ariesh@gmail.com",Status:"Status:Active" },
+    {  img: require("./images/owner6.jpg"), Name:"Name:Sridhar", PhoneNo:"PhoneNo:1234545", Mail:"Mail:sridhar@gmail.com" ,Status:"Status:Active" },
 ];
 
 
@@ -19,10 +22,9 @@ function BuildingOwners()
 <div>
     <div className="Container">
         <div className="display-1"></div>
-            <h1>Building Owner Information</h1>
-            {Owners.map((Owner)=> <Buildinglist Key ={Owner.id} img={Owner.img}  id={Owner.id} Name={Owner.Name} PhoneNo={Owner.PhoneNo}
-             Mail={Owner.Mail}/>
-            
+            {Owners.map((Owner)=>  <Link key={Owner.img} to={`/owner/${Owner.img}`}> <Buildinglist Key  img={Owner.img}  id={Owner.id} Name={Owner.Name} PhoneNo={Owner.PhoneNo}
+             Mail={Owner.Mail} Status={Owner.Status}/>
+            </Link>
              )};
             </div>
          <Buildinglist/>

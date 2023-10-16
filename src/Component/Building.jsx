@@ -8,8 +8,8 @@ function Building()
         <nav>
       <div class="header">
         <div class="col">
-        <div class="Dash">
-        <Link id="dash"to="/dashboard/building/buildinglist">Owners Detail</Link>
+         <div class="Dash">
+     <Link id="dash"to="/dashboard/building/buildinglist">Owners Detail</Link>
         </div>
         <div class="own">
         <Link id="own"to="/dashboard/building/buildingowners">+Building Owner</Link>
