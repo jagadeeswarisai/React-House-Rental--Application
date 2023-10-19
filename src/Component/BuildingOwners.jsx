@@ -22,10 +22,11 @@ function BuildingOwners()
 <div>
     <div className="Container">
         <div className="display-1"></div>
-            {Owners.map((Owner)=>  <Link key={Owner.img} to={`/owner/${Owner.img}`}> <Buildinglist Key  img={Owner.img}  id={Owner.id} Name={Owner.Name} PhoneNo={Owner.PhoneNo}
-             Mail={Owner.Mail} Status={Owner.Status}/>
-            </Link>
-             )};
+        {Owners.map((Owner) => (
+               <Link key={Owner.Name} to={`/dashboard/building/owner/${Owner.Name}`}>
+                  <Buildinglist Key img={Owner.img} Name={Owner.Name} PhoneNo={Owner.PhoneNo} Mail={Owner.Mail} Status={Owner.Status}/>
+               </Link>
+            ))}
             </div>
          <Buildinglist/>
             </div>

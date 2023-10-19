@@ -26,6 +26,7 @@ import PaymentForm from './Component/PaymentForm';
 import PaymentDetail from './Component/PaymentDetail';
 import SignUp from './Component/SignUp';
 import Home from './Component/Home';
+import BuildingOwnersDetail from "./Component/BuildingOwnersDetail";
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="home" element={<Home/>}/>
           <Route path="building" element={<Building/>}>
           <Route path="buildingowners" element={<BuildingOwners/>}/>
+          <Route path="owner/:Name" element={<BuildingOwnersDetail />} />
          <Route path="buildinglist"element={<Buildinglist/>}/>
             </Route>
             <Route exact path="NewBuilding" element={<NewBuilding/>}>
