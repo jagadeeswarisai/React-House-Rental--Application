@@ -1,13 +1,8 @@
-#max
+
+#max1
 {
-    width:400px;
-    height:45px;
-    border:1px solid  #3b5998;
-    margin-top: 90px;
-    margin-left: 250px;
-    text-align: center;
-    border-radius: 3px;
-    padding-top: 8px;
-    background-color: #3b5998;
-    color:white;
+    width:100px;
+    height:100px;
+    margin-top: 50px;
+    margin-left: 400px;
 }

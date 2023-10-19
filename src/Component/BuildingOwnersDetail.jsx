@@ -5,7 +5,9 @@ function BuildingOwnersDetail()
 {
   return(
     <div>
-     <h1 id="max"> BuildingOwners Detail Page</h1>
+  
+    <img src={require("./images/Owner.jpg")} width="100" height="100" alt="cam" id="max1"/>
+    
       </div>
   );
   }
