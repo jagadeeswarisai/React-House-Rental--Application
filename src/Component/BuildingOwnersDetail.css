@@ -3,6 +3,30 @@
 {
     width:100px;
     height:100px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 400px;
+}
+#max2
+{
+    width:300px;
+    height:200px;
+   
+    margin-left: 700px;
+    margin-top: -60px;
+    border-radius: 50%;
+}
+.max3
+{
+    width:360px;
+    height:200px;
+   
+ 
+}
+.max4
+{
+    width:300px;
+    height:500px;
+  
+    margin-left: 600px;
+    margin-top: -210px;
 }

@@ -34,6 +34,7 @@ import BuildingOwnersDetail from "./Component/BuildingOwnersDetail";
 
 
 
+
 function App() {
   return (
     <div >
