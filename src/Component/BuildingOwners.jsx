@@ -13,6 +13,7 @@ const Owners=[
     {   img: require("./images/owner4.png"), Name:"Name:Anitha",  PhoneNo:"PhoneNo:123454", Mail:"Mail:ani@gmail.com" ,Status:"Status:InActive"},
     {  img: require("./images/owner5.jpg"), Name:"Name:Ariesh", PhoneNo:"PhoneNo:1234545", Mail:"Mail:ariesh@gmail.com",Status:"Status:Active" },
     {  img: require("./images/owner6.jpg"), Name:"Name:Sridhar", PhoneNo:"PhoneNo:1234545", Mail:"Mail:sri@gmail.com" ,Status:"Status:Active" },
+     {  img: require("./images/owner6.jpg"), Name:"Name:Sridhar", PhoneNo:"PhoneNo:1234545", Mail:"Mail:sri@gmail.com" ,Status:"Status:Active" },
     ];
 
 
